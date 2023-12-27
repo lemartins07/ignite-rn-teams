@@ -3,7 +3,7 @@ import {
   Roboto_700Bold,
   useFonts,
 } from '@expo-google-fonts/roboto';
-import { Groups } from '@screens/Groups';
+import { NewGroup } from '@screens/NewGroup';
 import { ThemeProvider } from 'styled-components';
 
 import { ActivityIndicator, StatusBar } from 'react-native';
@@ -18,7 +18,7 @@ export default function App(): React.JSX.Element {
         backgroundColor="transparent"
         translucent
       />
-      {fontsLoaded ? <Groups /> : <ActivityIndicator />}
+      {fontsLoaded ? <NewGroup /> : <ActivityIndicator />}
     </ThemeProvider>
   );
 }
